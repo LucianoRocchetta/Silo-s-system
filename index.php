@@ -125,7 +125,7 @@
         <!--Start Footer-->
         <footer>
             <div class="footer-container">
-                <h2>Created by <span>Grupo 4-PWD</span></h2>
+                <h2>Created by<span>Grupo 4-PWD</span></h2>
             </div>
         </footer>
 
