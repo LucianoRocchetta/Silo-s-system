@@ -36,8 +36,19 @@
     var trace1 = {
   x: datosX,
   y: datosY,
-  type: 'scatter'
+  mode: 'markers',
+  name: 'Mediciones',
+  marker: {
+      color: 'rgb(164,194,244',
+      size: 12,
+      line: {
+          color: 'white',
+          width: 0.5
+      },
+      type: 'scatter'
+  }
 };
+
 
 var data = [trace1];
 
