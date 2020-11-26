@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;1,200;1,300&display=swap');
+
+*{
+    padding: 0px;
+    margin: 0px;
+    color: black;
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+}
+
+i{
+    font-size: 18px;
+    color: #ffffff;
+    margin: 0px 10px;
+}
+
+body{
+    font-family: 'Nunito', sans-serif;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+/*HEADER*/
+
+header{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background: #fdc830;
+    background: linear-gradient(to right, #fdc830, #f37335);
+    height: 60px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+header .container{
+    height: 100%;
+}
+
+header .flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+header ul{
+    list-style: none;
+    margin-right: 20px;
+}
+
+header li{
+    display: inline-block;
+}
+
+header li a{
+    text-decoration: none;
+    color: #fcfcfc;
+    padding: 10px;
+    font-weight: 500;
+    font-size: 18px;
+    margin-right: 20px;
+    border: 1px solid rgba(237, 237, 237, 0.83);
+}
+
+header li a:hover{
+    border: 2px solid rgba(244, 244, 244, 0.88);
+    transition: all 0.1s ease;
+    
+}
+
+header h2{
+    margin-left: 20px;
+    text-transform: uppercase;
+    font-size: 26px;
+    padding: 10px;
+    color: #009dff;
+    font-weight: 700;
+}
+
+/*MEDICIONES*/
+
+.mediciones{
+    margin: auto;
+    width: 75%;
+    margin-top: 100px;
+}
+
+.mediciones .title{
+  margin-left: 25px;
+  padding-left: 10px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  color: #505050;
+  font-size: 18px;
+  border-left: 1px solid #6c6c6c;
+}
+
+.mediciones .browser{
+    padding: 20px;
+}
+
+
+.mediciones .browser h2{
+    color: #2f2f2f;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.mediciones .browser input{
+    padding: 10px 30px;
+}
+
+.mediciones .browser button{
+    width: 100px;
+    margin: 0px 10px;
+    height: 30px;
+    color: #ffffff;
+    background: #3499d9;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+}
+
+.mediciones .browser button:hover{
+    cursor: pointer;
+}
+
+.center{
+    display: flex;
+    align-items: center;
+}
+/*TABLE*/
+
+.table-container{
+    margin: auto;
+    margin-top: 80px;
+    width: 80%;
+}
+
+.table{
+    width: 100%;
+    font-size: 18px;
+    text-align: center;
+    border: 1px solid #d1d1d1;
+    border-collapse: collapse;
+}
+
+.table th, td{
+    padding: 10px 50px;
+}
+
+.table th{
+    color: #ffffff;
+    font-weight: 500;
+}
+
+.table thead{
+    background: #3499d9;
+    border-bottom: 1px solid #d4d4d4;
+}
+
+
+/*FOOTER*/
+
+footer{
+    position: fixed;
+    width: 100%;
+    bottom: 0px;
+    left: 0px;
+    height: 80px;
+    margin-top: 150px;
+    background: #1d1d1d;
+}
+
+footer .footer-container{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin: auto;
+    text-align: center;
+}
+
+footer .footer-container h2{
+    color: #ebebeb;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+footer .footer-container h2 span{
+    color: #3499d9;
+}
+
+.container-exp{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    margin: 10px auto;
+}
+
+.container-exp button{
+    width: 100px;
+    margin: 0px 10px;
+    height: 30px;
+    color: #ffffff;
+    background: #3499d9;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+}
+
+.container-exp button:hover{
+    cursor: pointer;
+}
