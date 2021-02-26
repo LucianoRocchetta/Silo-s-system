@@ -47,9 +47,19 @@
             <div class="browser">
                 <h2>Fecha / Hora de Medicion: </h2>
                 <div class="center">
-                    <input type="date">
-                    <button>Buscar</button>
+                    <form action="" method="post">
+                    <input type="date" name="date">
+                    <input type="submit" value="Buscar" id="btn-submit"></input>
+                    </form>
                 </div>
+
+
+
+                <?php
+                    $date = $_POST['date'];
+                    echo $date;
+                ?>
+
                 
                 <div class="table-container">
                     <table class="table">
@@ -61,6 +71,22 @@
                         </thead>
                         <tbody>
                            <?php
+
+                            if($date != null){
+                                $datoWithDate = "SELECT * FROM mediciones WHERE fecha_hora = '".$date."'";
+                                $query = mysqli_query($conexion, $datoWithDate);
+                                while($row=mysqli_fetch_array($query)){
+                                    ?>
+                                     <tr>
+                                        <td><?php echo $row['id']?></td>
+                                        <td><?php echo $row['tipo_medicion']?></td>
+                                        <td><?php echo $row['valor']?></td>
+                                        <td><?php echo $row['fecha_hora']?></td>
+                                    </tr>
+                                    <?php
+                                }
+                            }
+                            else{
                             $datos="SELECT * FROM mediciones";
                             $ejecutar=mysqli_query($conexion, $datos);
                             while($row=mysqli_fetch_array($ejecutar))
@@ -72,7 +98,7 @@
                                 <td><?php echo $row['valor']?></td>
                                 <td><?php echo $row['fecha_hora']?></td>
                             </tr>
-                            <?php } ?>
+                            <?php } }?>
                         </tbody>
                     </table>
                 </div>

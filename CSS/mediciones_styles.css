@@ -116,7 +116,7 @@ header h2{
     padding: 10px 30px;
 }
 
-.mediciones .browser button{
+.mediciones .browser .btn-submit{
     width: 100px;
     margin: 0px 10px;
     height: 30px;
@@ -127,7 +127,7 @@ header h2{
     border-radius: 5px;
 }
 
-.mediciones .browser button:hover{
+.mediciones .browser .btn-submit:hover{
     cursor: pointer;
 }
 
